@@ -1,0 +1,10 @@
+<div>
+	<%= link_to "Create Project", new_project_path %>
+</div>	
+<div>
+  <%- @projects.each do |project| %>
+     <div>
+     <%= link_to project.name, project_documents_path(project) %>
+ </div>
+  <% end %>
+</div>

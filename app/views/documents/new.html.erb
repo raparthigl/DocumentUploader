@@ -1,0 +1,5 @@
+<%= form_for @document, url: project_documents_path(@project) do |f| %>
+ <%=f.text_field :name%>
+ <%=f.file_field :attachment%>
+ <%=f.submit "submit"%>
+<%end%>	

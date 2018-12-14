@@ -1,0 +1,10 @@
+<div>
+	<%=link_to "Upload File", new_project_document_path(@project)%>
+</div>	
+<div>
+	<%- @documents.each do |document| %>
+	   <div>
+	   	 <%= document.attachment.url%>
+	   </div>
+	<% end %>
+</div>
